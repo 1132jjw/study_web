@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>portpolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+font-family: 'Recipekorea';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+body {
+  font-family: 'Recipekorea', serif;
+
+}
+
+.work{
+  background-color: #FBEFEF;
+  color:#8904B1;
+  text-align: center;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
+  height: 400px;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  width: 100%;
+  background: #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 1000px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>원 작업물</h2>
+</header>
+
+<section>
+
+  <nav>
+    <ul>
+      <a href="portpolio_main.html">메인 페이지</a>  |
+      <a href="portpolio_team.html">공동 작업물</a>  |
+      <a href="portpolio_hoon.html">훈 작업물</a>
+    </ul>
+  </nav>
+
+  <article>
+    <a href="https://github.com/1132jjw/study_web" target="_blank">
+      <div class="work">
+        <h2>
+          계산기
+        </h2>
+      </div>
+    </a>
+  </article>
+
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
